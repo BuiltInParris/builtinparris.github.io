@@ -16,9 +16,46 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/personal.css">
 </head>
 
 <body>
+    <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none" id="customSvgLibrary">
+  <!-- social -->
+  <symbol id="apple" viewBox="-1 1 24 24"><path d="M17.6 13.8c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.6-2.3-4.4-2.4-1.9-.2-3.6 1.1-4.6 1.1-.9 0-2.4-1.1-4-1-2 0-3.9 1.2-5 3-2.1 3.7-.5 9.1 1.5 12.1 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 3.9-1s2.4 1 4 1 2.7-1.5 3.7-2.9c1.2-1.7 1.6-3.3 1.7-3.4-.1-.1-3.2-1.3-3.2-4.9zm-3.1-9c.8-1 1.4-2.4 1.2-3.8-1.2 0-2.7.8-3.5 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.6-1.7z"/></symbol>
+
+  <symbol id="facebook" viewBox="0 0 24 24"><path style="fill:#2D87FF" d="M24 1.3v21.3c0 .7-.6 1.3-1.3 1.3h-6.1v-9.3h3.1l.5-3.6h-3.6v-2.2c0-1.1.3-1.8 1.8-1.8h1.9v-3.2c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8v2.7h-3.1v3.6h3.1v9.2h-11.5c-.7 0-1.3-.6-1.3-1.3v-21.4c0-.7.6-1.3 1.3-1.3h21.3c.8 0 1.4.6 1.4 1.3z"/></symbol>
+
+  <symbol id="facebook2" viewBox="0 0 512 512"><path d="M288 176v-64c0-17.664 14.336-32 32-32h32v-80h-64c-53.024 0-96 42.976-96 96v80h-64v80h64v256h96v-256h64l32-80h-96z"/></symbol>
+
+  <symbol id="soundcloud" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+    <path style="fill:#FF9800;" d="M432,240c-5.696,0-11.296,0.608-16.672,1.76C408.128,169.024,346.592,112,272,112
+      c-8.832,0-16,7.168-16,16v256c0,8.832,7.168,16,16,16h160c44.128,0,80-35.872,80-80C512,275.904,476.128,240,432,240z"/>
+    <path style="fill:#FF9800;" d="M208,144c-8.832,0-16,7.168-16,16v224c0,8.832,7.168,16,16,16s16-7.168,16-16V160
+      C224,151.168,216.832,144,208,144z"/>
+    <path style="fill:#FF9800;" d="M144,208c-8.832,0-16,7.168-16,16v160c0,8.832,7.168,16,16,16s16-7.168,16-16V224
+      C160,215.168,152.832,208,144,208z"/>
+    <path style="fill:#FF9800;" d="M80,208c-8.832,0-16,7.168-16,16v160c0,8.832,7.168,16,16,16s16-7.168,16-16V224
+      C96,215.168,88.832,208,80,208z"/>
+    <path style="fill:#FF9800;" d="M16,256c-8.832,0-16,7.168-16,16v96c0,8.832,7.168,16,16,16s16-7.168,16-16v-96
+      C32,263.168,24.832,256,16,256z"/>
+  </symbol>
+   
+  <symbol id="fb-like" viewBox="0 0 20 20"><path d="M0 8v12h5v-12h-5zm2.5 10.8c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8s.8.3.8.8c0 .4-.4.8-.8.8zm3.5-.8h9.5c1.1 0 1.7-1 1.7-1.7 0-.3-.4-1-.4-1 1.4-.3 1.7-1.2 1.7-1.7-.1-.5-.3-.9-.5-1 1-.4 1.5-1.1 1.4-1.9-.1-.8-1-1.5-1-1.5 1-.6.9-1.5.9-1.5-.3-1.3-1.5-1.7-1.7-1.7h-5.6s.3-.5.3-2.4-1.3-3.6-2.6-3.6c0 0-.7.1-1 .3v3.5l-2.7 4.4v9.8z"/></symbol>
+
+
+  <symbol id="twitter" viewBox="0 1 24 23"><path style="fill:#1DA1F2" d="M21.5 7.6v.6c0 6.6-5 14.1-14 14.1-2.8 0-5.4-.8-7.6-2.2l1.2.1c2.3 0 4.4-.8 6.1-2.1-2.2 0-4-1.5-4.6-3.4.3.1.6.1.9.1.5 0 .9-.1 1.3-.2-2.1-.6-3.8-2.6-3.8-5 .7.4 1.4.6 2.2.6-1.3-.9-2.2-2.4-2.2-4.1 0-.9.2-1.8.7-2.5 2.4 3 6.1 5 10.2 5.2-.1-.4-.1-.7-.1-1.1 0-2.7 2.2-5 4.9-5 1.4 0 2.7.6 3.6 1.6 1-.3 2.1-.7 3-1.3-.4 1.2-1.1 2.1-2.2 2.7 1-.1 1.9-.4 2.8-.8-.6 1.1-1.4 2-2.4 2.7z"/></symbol>
+
+  <symbol id="youtube" viewBox="0 0 24 24"><path d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z"/></symbol>
+  <svg xmlns="http://www.w3.org/2000/svg" height="168px" width="559px" version="1.1" viewBox="0 0 559 168">
+  <symbol id="spotify" viewBox="0 0 168 168">
+    <path fill="#1ED760" d="m83.996 0.277c-46.249 0-83.743 37.493-83.743 83.742 0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l0.001-0.004zm38.404 120.78c-1.5 2.46-4.72 3.24-7.18 1.73-19.662-12.01-44.414-14.73-73.564-8.07-2.809 0.64-5.609-1.12-6.249-3.93-0.643-2.81 1.11-5.61 3.926-6.25 31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-0.903-8.148-4.35-1.04-3.453 0.907-7.093 4.354-8.143 30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-0.001zm0.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219-1.254-4.14 1.08-8.513 5.221-9.771 29.581-8.98 78.756-7.245 109.83 11.202 3.73 2.209 4.95 7.016 2.74 10.733-2.2 3.722-7.02 4.949-10.73 2.739z"/>
+  </symbol>
+  <symbol id="apple_color" viewBox="0 0 500 550"><style>.st0{fill:#61bb46}</style>
+    <path class="st0" d="M456.8 184.4c-27.9-35-67.4-55.8-105.5-55.8-27 0-45.7 7.1-62.3 13.4-13.5 5.1-26.3 10-41.5 10-16.4 0-31-5.2-46.5-10.8-17.3-6.2-35.2-12.6-57.6-12.6-43.4 0-87.5 26.6-115.3 69.5-.2.3-.4.6-.5.9l-1.4 2.3h408.9l.4-.4c6.2-5.3 13.2-10.1 20.7-14.2l1.6-.9-1-1.4z"/><path class="st0" d="M342.1 2.3l-.2-1.4-1.4.1c-29.2 2-63.8 20.7-84.1 45.4-22.2 27.1-32.5 59.9-27.4 87.5l.2 1.2h3.5c29.4 0 62.4-17.2 82.6-43.3 21.4-27.4 31.2-60.1 26.8-89.5z"/><path d="M27.5 199.1c-12.1 19-20.5 46.3-22.7 70.2H397c4.2-26.2 18.3-51.2 40.7-70.2H27.5z" fill-rule="evenodd" clip-rule="evenodd" fill="#fdb827"/><path d="M406 338.3c-9.6-21.7-12.7-45.5-8.9-68.8l.3-1.7H5.2l-.1 1.3c-2.4 22.1-1.8 45.6 2 70l.2 1.3H407l-1-2.1z" fill="#f5821f"/><path d="M472 401c-29.7-11.3-53.2-33.5-66.1-62.7l-.4-.9H6.6l.3 1.7C10.6 362.5 17 386 26.1 409l.4.9h443.3l.8-1.8c.8-1.7 1.5-3.4 2.3-5.2l.6-1.4-1.5-.5z" fill="#e03a3e"/><path d="M25.3 406.9l.8 2c8.8 22.4 20.1 44.2 33.4 64.6 1.1 1.7 2.3 3.5 3.5 5.2l.4.7h367.3l.4-.7c2.4-3.5 4.7-7 6.4-9.5 14.9-22.8 21.2-35 32.6-60.2l1-2.1H25.3z" fill="#963d97"/><path d="M61.4 476.5l1.6 2.3c21.8 32.5 51.8 69.8 91.3 70.2h.8c16.5 0 27.6-5 39.4-10.3 13.9-6.2 28.3-12.6 53.7-12.8h.8c25.1 0 39.1 6.4 52.6 12.7 11.5 5.3 22.4 10.3 38.8 10.3h.7c37.8-.4 68-37.7 90.1-70.1l1.6-2.3H61.4z" fill="#009ddc"/>
+  </symbol>
+
+</svg>
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="lds-ellipsis">
@@ -28,6 +65,24 @@
             <div></div>
         </div>
     </div>
+
+    <!-- Navigation -->
+    <nav class="side" style="z-position:1000">
+      <div class="navigation default" style="height:100%">
+        <ul>
+          <li><a href="https://www.facebook.com/AbstractFactory7"><svg class="sidebar-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+          <li><a href="https://twitter.com/Stevie_Parris"><svg class="sidebar-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+          <li><a href="https://www.instagram.com/parrisoul"><svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve"><style type="text/css">
+    .st0{fill:url(#SVGID_1_);}
+    .st1{fill:url(#SVGID_2_);}
+    .st2{fill:#654C9F;}
+</style><g id="Edges"/><g id="Symbol"><g><radialGradient cx="56.3501" cy="19.2179" gradientTransform="matrix(0.9986 -5.233596e-02 4.448556e-02 0.8488 -36.9742 443.8014)" gradientUnits="userSpaceOnUse" id="SVGID_1_" r="711.335"><stop offset="0" style="stop-color:#FED576"/><stop offset="0.2634" style="stop-color:#F47133"/><stop offset="0.6091" style="stop-color:#BC3081"/><stop offset="1" style="stop-color:#4C63D2"/></radialGradient><path class="st0" d="M96.1,23.2c-16.2,6.3-29.9,14.7-43.6,28.4C38.8,65.2,30.4,79,24.1,95.1c-6.1,15.6-10.2,33.5-11.4,59.7    c-1.2,26.2-1.5,34.6-1.5,101.4s0.3,75.2,1.5,101.4c1.2,26.2,5.4,44.1,11.4,59.7c6.3,16.2,14.7,29.9,28.4,43.6    c13.7,13.7,27.4,22.1,43.6,28.4c15.6,6.1,33.5,10.2,59.7,11.4c26.2,1.2,34.6,1.5,101.4,1.5c66.8,0,75.2-0.3,101.4-1.5    c26.2-1.2,44.1-5.4,59.7-11.4c16.2-6.3,29.9-14.7,43.6-28.4c13.7-13.7,22.1-27.4,28.4-43.6c6.1-15.6,10.2-33.5,11.4-59.7    c1.2-26.2,1.5-34.6,1.5-101.4s-0.3-75.2-1.5-101.4c-1.2-26.2-5.4-44.1-11.4-59.7C484,79,475.6,65.2,462,51.6    c-13.7-13.7-27.4-22.1-43.6-28.4c-15.6-6.1-33.5-10.2-59.7-11.4c-26.2-1.2-34.6-1.5-101.4-1.5s-75.2,0.3-101.4,1.5    C129.6,12.9,111.7,17.1,96.1,23.2z M356.6,56c24,1.1,37,5.1,45.7,8.5c11.5,4.5,19.7,9.8,28.3,18.4c8.6,8.6,13.9,16.8,18.4,28.3    c3.4,8.7,7.4,21.7,8.5,45.7c1.2,25.9,1.4,33.7,1.4,99.4s-0.3,73.5-1.4,99.4c-1.1,24-5.1,37-8.5,45.7c-4.5,11.5-9.8,19.7-18.4,28.3    c-8.6,8.6-16.8,13.9-28.3,18.4c-8.7,3.4-21.7,7.4-45.7,8.5c-25.9,1.2-33.7,1.4-99.4,1.4s-73.5-0.3-99.4-1.4    c-24-1.1-37-5.1-45.7-8.5c-11.5-4.5-19.7-9.8-28.3-18.4c-8.6-8.6-13.9-16.8-18.4-28.3c-3.4-8.7-7.4-21.7-8.5-45.7    c-1.2-25.9-1.4-33.7-1.4-99.4s0.3-73.5,1.4-99.4c1.1-24,5.1-37,8.5-45.7c4.5-11.5,9.8-19.7,18.4-28.3c8.6-8.6,16.8-13.9,28.3-18.4    c8.7-3.4,21.7-7.4,45.7-8.5c25.9-1.2,33.7-1.4,99.4-1.4S330.7,54.8,356.6,56z"/><radialGradient cx="154.0732" cy="134.5501" gradientTransform="matrix(0.9986 -5.233596e-02 4.448556e-02 0.8488 -24.3617 253.2946)" gradientUnits="userSpaceOnUse" id="SVGID_2_" r="365.2801"><stop offset="0" style="stop-color:#FED576"/><stop offset="0.2634" style="stop-color:#F47133"/><stop offset="0.6091" style="stop-color:#BC3081"/><stop offset="1" style="stop-color:#4C63D2"/></radialGradient><path class="st1" d="M130.9,256.3c0,69.8,56.6,126.3,126.3,126.3s126.3-56.6,126.3-126.3S327,130,257.2,130    S130.9,186.5,130.9,256.3z M339.2,256.3c0,45.3-36.7,82-82,82s-82-36.7-82-82c0-45.3,36.7-82,82-82S339.2,211,339.2,256.3z"/><circle class="st2" cx="388.6" cy="125" r="29.5"/></g></g></svg></a></li>
+          <li><a href="https://open.spotify.com/artist/0LhAzPJPsSHYm4EMBrvTf5?si=XDXSaBK-Q7OMjbeHhi7h0w"><svg class="sidebar-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#spotify"></use></svg></a></li>
+          <li><a href="https://music.apple.com/us/artist/abstract-factory/1501105003"><svg class="sidebar-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#apple_color"></use></svg></a></li>
+          <li><a href="https://soundcloud.com/stevie-parris"><svg class="sidebar-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#soundcloud"></use></svg></a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
@@ -39,7 +94,7 @@
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo_new_white.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -67,7 +122,7 @@
                                 <div class="login-register-cart-button d-flex align-items-center">
                                     <!-- Cart Button -->
                                     <div class="cart-btn">
-                                        <p><iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0LhAzPJPsSHYm4EMBrvTf5?si=2x6WDnxlTQi6fKl4g-dKzA&size=basic&theme=light" width="200" height="35"style="padding-top: 8px;" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe></p>
+                                        <p><iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0LhAzPJPsSHYm4EMBrvTf5?si=2x6WDnxlTQi6fKl4g-dKzA&size=basic&theme=light" width="135" height="35"style="padding-top: 8px;" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe></p>
                                     </div>
                                 </div>
                             </div>
@@ -83,19 +138,26 @@
 
 
     <!-- ##### Hero Area Start ##### -->
-    <section class="single-hero-slide d-flex align-items-center justify-content-center" style="background-color:white;vertical-align: middle;">
+    <section class="single-hero-slide d-flex align-items-center justify-content-center" style="background-color:white;vertical-align: middle; height:100%">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12" style="margin-top:100px;">
-                    <img class="img-fluid" src="img/core-img/header-img.png" alt="">
-                </div>
-                <div class="col-lg-6 col-md-12" style="margin-top:200px;">
-                    <div class="align-left">
-                        <br>
-                        <h1 class="text-white">
-                        <span style="font-size:4rem;">Hey there!<br> </span></br>
-                        <span style="font-size:2rem;">My name is Stevie.</span>
-                        </h1>
+                <div class="col-lg-12 col-md-12 outline-image" style="padding-top:100px;padding-bottom:100px">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="align-left" style="margin-left:50px">
+                                    <br>
+                                    <h1 class="text-white">
+                                    <span style="font-size:4rem;">hey there!<br> </span></br>
+                                    <span style="font-size:2rem;">my name is Stevie.</span><br>
+                                    <span style="font-size:2rem;">(<- that's me)</span><br><br>
+                                    <span style="font-size:2rem;text-align:center">let's chat.</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,27 +173,51 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="contact-content mb-100">
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
+                        <div class="fix-7-12">
+                          <h1 class="smaller margin-bottom-2 ae-1">bio</h1>
+                          <p class="large ae-8"><span class="opacity-100"><i>Music is a therapy but Jesus is the cure.</i>
+                          </span></p>
+                          <div class="left">
+                          <p class="large ae-8"><span class="opacity-8">
+                            You may know me as Abstract Factory but as you can see, my name is Stevie Parris. 
+                          </span></p>
+                          <p class="large ae-2"><span class="opacity-8">Born and raised in the Philadelphia suburbs, I grew up playing, singing, and writing music. When I hit the end of middle school I began to realize that I loved another part of music, production. Ever since then I have been producing and recording music.
+                          </span></p>
+                          <p class="large ae-2"><span class="opacity-8">
+                            When I hit college, I ended up getting a degree in Software Engineering to support myself and my wife. While I've spent the last decade refining my craft as a musician, writer and producer, I've only begun to put myself out into the world since the beginning of 2019.
+                          </span></p>
+                          <p class="large ae-2"><span class="opacity-8">
+                            When it comes to music, I am passionate and excited to see the impact it can have on people. Music saves lives, literally. 
+                            </span></p>
+                            <p class="large ae-2"><span class="opacity-8">In a paraphrase of Avatar the Last Airbender: "I believe music can change the world."
+                          </span></p>
+                          <p class="large ae-1"><span class="opacity-8">
+                            How would I describe myself as an artist? Thanks for asking!
+                          </span></p>
+                          <p class="large ae-2"><span class="opacity-8">
+                            Abstract Factory is a musical artist that creates catchy, energetic music that's familiar yet breathes new life; writing lyrics to inspire its audience to think deeper, dream bigger, and to value the humanity in each of us.
+                          </span></p>
+                          <p class="large ae-2"><span class="opacity-8">
+                            As a follower of Jesus Christ, life is equally about the journey and the destination. Each thing we do every day has meaning and is significant in its own way. My perspective is deeply colored by God-given glasses that see humanity's beauty, brokeness, and hope for restoration. I have a mission laid before me: to let my music act as a therapy to people. My dream is that along the way, some also see that Jesus is the cure. I also aspire to working with other people in that mission, whether it's by producing them, collaborating with them, or just encouraging them in what they're already doing.
+                          </span></p>
+                          <p class="large ae-2"><span class="opacity-8">
+                            So that's me: a highly motivated, nerdy, music loving, God fearing, producing, writing, performing, video editing creative mastermind always looking for the next project. Make sure to check out the albums tab to see what I've created! If you want to, feel free to shoot me an email @ whatever email is listed on my contact page. I promise not to ignore you. Hopefully we can do incredible things together.
+                          </span></p>
+                          <p class="large ae-2"><span class="opacity-8">
+                            Yours truly,
+                          </span></p>
+                          <p class="large ae-2"><span class="opacity-8">
+                            Stevie
+                          </span></p>
+                          </div>
+                        </div>  
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="contact-content mb-100">
+                    <div class="contact-content mb-100" style="margin: 0;top:20%">
                         <div>
-                                <img src="img/bg-img/a11.jpg" alt="">
+                                <img src="img/core-img/profile.jpeg" style="margin: 0;" alt="">
                         </div>
-
-                        <!-- Contact Social Info -->
-                        <div class="contact-social-info mt-50">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-
                     </div>
                 </div>
 
@@ -140,7 +226,7 @@
     </section>
     <!-- ##### Contact Area End ##### -->
 
-    
+
 
     <!-- ##### Contact Area Start ##### -->
     <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
@@ -148,7 +234,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading white wow fadeInUp" data-wow-delay="100ms">
-                        <p>See what’s new</p>
+                        <p>Fill out the form below to</p>
                         <h2>Get In Touch</h2>
                     </div>
                 </div>
@@ -197,8 +283,8 @@
     <footer class="footer-area">
         <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
-                <div class="col-12 col-md-6">
-                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                <div class="col-12 col-md-6 classy-navbar justify-content-between">
+                    <a href="index.html" class="nav-brand"><img src="img/core-img/logo_new_white.png" alt=""></a>
                     <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>

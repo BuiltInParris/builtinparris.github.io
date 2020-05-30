@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///Users/sparris/Documents/website-2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Abstract Factory Homepage</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="file:///Users/sparris/Documents/website-2/img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./Abstract Factory Homepage_files/style.css">
+
+    <style>
+    .side {
+        right: 0;
+        height: 100%;
+        z-index: 100;
+        padding: 70px 4%;
+        pointer-events: none;
+        opacity: 1;
+        transition: opacity .5s;
+        transform: translate3d(0,0,0);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+    .nav {
+        border: 0;
+        vertical-align: baseline;
+        margin: 0;
+        display: block;
+    }
+    </style>
+
+</head>
+
+<body>
+    <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- social -->
+  <symbol id="apple" viewBox="-1 1 24 24"><path d="M17.6 13.8c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.6-2.3-4.4-2.4-1.9-.2-3.6 1.1-4.6 1.1-.9 0-2.4-1.1-4-1-2 0-3.9 1.2-5 3-2.1 3.7-.5 9.1 1.5 12.1 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 3.9-1s2.4 1 4 1 2.7-1.5 3.7-2.9c1.2-1.7 1.6-3.3 1.7-3.4-.1-.1-3.2-1.3-3.2-4.9zm-3.1-9c.8-1 1.4-2.4 1.2-3.8-1.2 0-2.7.8-3.5 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.6-1.7z"></path></symbol>
+
+  <symbol id="facebook" viewBox="0 0 24 24"><path d="M24 1.3v21.3c0 .7-.6 1.3-1.3 1.3h-6.1v-9.3h3.1l.5-3.6h-3.6v-2.2c0-1.1.3-1.8 1.8-1.8h1.9v-3.2c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8v2.7h-3.1v3.6h3.1v9.2h-11.5c-.7 0-1.3-.6-1.3-1.3v-21.4c0-.7.6-1.3 1.3-1.3h21.3c.8 0 1.4.6 1.4 1.3z"></path></symbol>
+
+  <symbol id="facebook2" viewBox="0 0 512 512"><path d="M288 176v-64c0-17.664 14.336-32 32-32h32v-80h-64c-53.024 0-96 42.976-96 96v80h-64v80h64v256h96v-256h64l32-80h-96z"></path></symbol>
+
+  <symbol id="soundcloud" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+    <path style="fill:#FF9800;" d="M432,240c-5.696,0-11.296,0.608-16.672,1.76C408.128,169.024,346.592,112,272,112
+      c-8.832,0-16,7.168-16,16v256c0,8.832,7.168,16,16,16h160c44.128,0,80-35.872,80-80C512,275.904,476.128,240,432,240z"></path>
+    <path style="fill:#FF9800;" d="M208,144c-8.832,0-16,7.168-16,16v224c0,8.832,7.168,16,16,16s16-7.168,16-16V160
+      C224,151.168,216.832,144,208,144z"></path>
+    <path style="fill:#FF9800;" d="M144,208c-8.832,0-16,7.168-16,16v160c0,8.832,7.168,16,16,16s16-7.168,16-16V224
+      C160,215.168,152.832,208,144,208z"></path>
+    <path style="fill:#FF9800;" d="M80,208c-8.832,0-16,7.168-16,16v160c0,8.832,7.168,16,16,16s16-7.168,16-16V224
+      C96,215.168,88.832,208,80,208z"></path>
+    <path style="fill:#FF9800;" d="M16,256c-8.832,0-16,7.168-16,16v96c0,8.832,7.168,16,16,16s16-7.168,16-16v-96
+      C32,263.168,24.832,256,16,256z"></path>
+  </symbol>
+   
+  <symbol id="fb-like" viewBox="0 0 20 20"><path d="M0 8v12h5v-12h-5zm2.5 10.8c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8s.8.3.8.8c0 .4-.4.8-.8.8zm3.5-.8h9.5c1.1 0 1.7-1 1.7-1.7 0-.3-.4-1-.4-1 1.4-.3 1.7-1.2 1.7-1.7-.1-.5-.3-.9-.5-1 1-.4 1.5-1.1 1.4-1.9-.1-.8-1-1.5-1-1.5 1-.6.9-1.5.9-1.5-.3-1.3-1.5-1.7-1.7-1.7h-5.6s.3-.5.3-2.4-1.3-3.6-2.6-3.6c0 0-.7.1-1 .3v3.5l-2.7 4.4v9.8z"></path></symbol>
+
+  <symbol id="instagram" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3.3"></circle><path d="M13,0H7C2.2,0,0,2.2,0,7v6c0,4.8,2.1,7,7,7h6c4.8,0,7-2.2,7-7V7C20,2.2,17.9,0,13,0z M10,15.1c-2.8,0-5.1-2.3-5.1-5.1 S7.2,4.9,10,4.9s5.1,2.3,5.1,5.1S12.8,15.1,10,15.1z M15.3,5.9c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2s1.2,0.5,1.2,1.2 C16.5,5.3,16,5.9,15.3,5.9z"></path></symbol>
+
+  <symbol id="twitter" viewBox="0 1 24 23"><path d="M21.5 7.6v.6c0 6.6-5 14.1-14 14.1-2.8 0-5.4-.8-7.6-2.2l1.2.1c2.3 0 4.4-.8 6.1-2.1-2.2 0-4-1.5-4.6-3.4.3.1.6.1.9.1.5 0 .9-.1 1.3-.2-2.1-.6-3.8-2.6-3.8-5 .7.4 1.4.6 2.2.6-1.3-.9-2.2-2.4-2.2-4.1 0-.9.2-1.8.7-2.5 2.4 3 6.1 5 10.2 5.2-.1-.4-.1-.7-.1-1.1 0-2.7 2.2-5 4.9-5 1.4 0 2.7.6 3.6 1.6 1-.3 2.1-.7 3-1.3-.4 1.2-1.1 2.1-2.2 2.7 1-.1 1.9-.4 2.8-.8-.6 1.1-1.4 2-2.4 2.7z"></path></symbol>
+
+  <symbol id="youtube" viewBox="0 0 24 24"><path d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z"></path></symbol>
+
+</svg>
+
+    <!-- Preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="side ">
+      <div class="navigation default">
+          
+        <ul>
+          <li><a href="https://www.facebook.com/AbstractFactory7"><svg style="width:30px;height:30px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+          <li><a href="https://twitter.com/Stevie_Parris"><svg style="width:30px;height:30px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+          <li><a href="https://www.instagram.com/parrisoul"><svg style="width:30px;height:30px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="file:///Users/sparris/Documents/website/index.html#instagram"></use></svg></a></li>
+          <li><a href="https://soundcloud.com/stevie-parris"><svg style="width:30px;height:30px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="file:///Users/sparris/Documents/website/index.html#soundcloud"></use></svg></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div id="sticky-wrapper" class="sticky-wrapper" style="height: 85px;"><div class="oneMusic-main-menu" style="width: 1092px;">
+            <div class="classy-nav-container breakpoint-off light left">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="file:///Users/sparris/Documents/website-2/index.html" class="nav-brand"><img src="./Abstract Factory Homepage_files/logo_new_white.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="file:///Users/sparris/Documents/website-2/index.html">Home</a></li>
+                                    <li><a href="file:///Users/sparris/Documents/website-2/bio.html">Bio</a></li>
+                                    <li><a href="file:///Users/sparris/Documents/website-2/albums.html">Albums</a></li>
+                                    <li><a href="file:///Users/sparris/Documents/website-2/contact.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn">
+                                        <p><iframe src="./Abstract Factory Homepage_files/saved_resource.html" width="135" height="35" style="padding-top: 8px;" scrolling="no" frameborder="0" allowtransparency="true"></iframe></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div></div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel owl-loaded owl-drag">
+            <!-- Single Hero Slide -->
+            
+
+            <!-- Single Hero Slide -->
+            
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3276px, 0px, 0px); transition: all 0s ease 0s; width: 6552px;"><div class="owl-item cloned" style="width: 1092px;"><div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/core-img/pheonix.png);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 0;">Latest album</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 0;">Reborn <span>Reborn</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="https://open.spotify.com/album/0jbVGCCIvyywwpmJXMoARU?si=rgwiQsZ6T2CcFv-rGHIfAg" class="btn oneMusic-btn mt-50" style="animation-delay: 500ms; opacity: 0;">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1092px;"><div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/core-img/makinit.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;" class="animated fadeInUp">Recently Released</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 1;" class="animated fadeInUp">Makin' It <span>Makin' It</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="https://open.spotify.com/album/3VAUIbiHDTSv2Z5pS7rjJP?si=wndh4Kv_Qna7Krwjyy0DdQ" class="btn oneMusic-btn mt-50 animated fadeInUp" style="animation-delay: 500ms; opacity: 1;">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item" style="width: 1092px;"><div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/core-img/pheonix.png);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 0;">Latest album</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 0;">Reborn <span>Reborn</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="https://open.spotify.com/album/0jbVGCCIvyywwpmJXMoARU?si=rgwiQsZ6T2CcFv-rGHIfAg" class="btn oneMusic-btn mt-50" style="animation-delay: 500ms; opacity: 0;">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item active" style="width: 1092px;"><div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/core-img/makinit.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;" class="animated fadeInUp">Recently Released</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 1;" class="animated fadeInUp">Makin' It <span>Makin' It</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="https://open.spotify.com/album/3VAUIbiHDTSv2Z5pS7rjJP?si=wndh4Kv_Qna7Krwjyy0DdQ" class="btn oneMusic-btn mt-50 animated fadeInUp" style="animation-delay: 500ms; opacity: 1;">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1092px;"><div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/core-img/pheonix.png);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 0;">Latest album</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 0;">Reborn <span>Reborn</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="https://open.spotify.com/album/0jbVGCCIvyywwpmJXMoARU?si=rgwiQsZ6T2CcFv-rGHIfAg" class="btn oneMusic-btn mt-50" style="animation-delay: 500ms; opacity: 0;">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1092px;"><div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/core-img/makinit.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms" style="animation-delay: 100ms; opacity: 1;" class="animated fadeInUp">Recently Released</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms" style="animation-delay: 300ms; opacity: 1;" class="animated fadeInUp">Makin' It <span>Makin' It</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="https://open.spotify.com/album/3VAUIbiHDTSv2Z5pS7rjJP?si=wndh4Kv_Qna7Krwjyy0DdQ" class="btn oneMusic-btn mt-50 animated fadeInUp" style="animation-delay: 500ms; opacity: 1;">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots disabled"></div></div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Latest Albums Area Start ##### -->
+    <section class="latest-albums-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading style-2" style="margin-bottom:33px">
+                        <p>Check out the</p>
+                        <h2>Latest Albums</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="ablums-text text-center mb-70">
+                        <p>Curious what kind of content we're manufacturing around here? Check out the titles below to get a taste of the music we make.<br>
+                            I'm passionate about making music that is meaningful, unique, and expresses the heart songs of each artist and their audience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="albums-slideshow owl-carousel owl-loaded owl-drag">
+                        
+
+                        <!-- Single Album -->
+                        
+
+                        <!-- Single Album -->
+                        
+
+                        <!-- Single Album -->
+                        
+
+                        <!-- Single Album -->
+                        
+                        <!-- Single Album -->
+                        
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1200px, 0px, 0px); transition: all 0s ease 0s; width: 3360px;"><div class="owl-item cloned" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/7yObxrWMBtCy8qhQS5UV4i?si=BmM6WDq-R3iOynmAOAxhiQ">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/alone.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Alone</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item cloned" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/5wNq1ncH8fq52LvAwBct7j?si=2PN_sYIPR0GClQb9Phe9Mw">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/light_vs_darkness.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Light_vs_<br>darkness_png</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item cloned" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/0piuoItOcsIoSxYjUgelYY?si=JSW3tcmARAKZ0VgjA5hB3Q">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/rigestan.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Rigestan</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item cloned" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/5d311TljqaCdBj5VSalJdx?si=-eG7LCpcSw-umyzYDvHUDA">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/pleasedontcallmeback.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Please Don't <br>Call Me Back</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/0jbVGCCIvyywwpmJXMoARU?si=rgwiQsZ6T2CcFv-rGHIfAg">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/pheonix.png" alt="">
+                                <div class="album-info">
+                                        <h5>Reborn</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item active" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/track/5Mx9Vcp8156XDvRIMtRMP2?si=chq-jkn7RxO29yipthus-w">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/makinit.jpg" alt="">
+                                <div class="album-info">
+                                        <h5>Makin' It</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item active" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/7yObxrWMBtCy8qhQS5UV4i?si=BmM6WDq-R3iOynmAOAxhiQ">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/alone.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Alone</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item active" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/5wNq1ncH8fq52LvAwBct7j?si=2PN_sYIPR0GClQb9Phe9Mw">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/light_vs_darkness.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Light_vs_<br>darkness_png</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item active" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/0piuoItOcsIoSxYjUgelYY?si=JSW3tcmARAKZ0VgjA5hB3Q">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/rigestan.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Rigestan</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/5d311TljqaCdBj5VSalJdx?si=-eG7LCpcSw-umyzYDvHUDA">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/pleasedontcallmeback.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Please Don't <br>Call Me Back</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item cloned" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/0jbVGCCIvyywwpmJXMoARU?si=rgwiQsZ6T2CcFv-rGHIfAg">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/pheonix.png" alt="">
+                                <div class="album-info">
+                                        <h5>Reborn</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item cloned" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/track/5Mx9Vcp8156XDvRIMtRMP2?si=chq-jkn7RxO29yipthus-w">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/makinit.jpg" alt="">
+                                <div class="album-info">
+                                        <h5>Makin' It</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item cloned" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/7yObxrWMBtCy8qhQS5UV4i?si=BmM6WDq-R3iOynmAOAxhiQ">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/alone.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Alone</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div><div class="owl-item cloned" style="width: 210px; margin-right: 30px;"><a href="https://open.spotify.com/album/5wNq1ncH8fq52LvAwBct7j?si=2PN_sYIPR0GClQb9Phe9Mw">
+                            <div class="single-album">
+                                <img src="./Abstract Factory Homepage_files/light_vs_darkness.jpg" alt="">
+                                <div class="album-info">
+                                    <h5>Light_vs_<br>darkness_png</h5>
+                                    <p>Abstract Factory</p>
+                                </div>
+                            </div>
+                        </a></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="fa fa-angle-double-left"></i></div><div class="owl-next"><i class="fa fa-angle-double-right"></i></div></div><div class="owl-dots disabled"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Latest Albums Area End ##### -->
+
+    <!-- ##### Featured Artist Area Start ##### -->
+    <section class="featured-artist-area section-padding-100 bg-img bg-overlay bg-fixed" style="background-image: url(img/bg-img/bg-4.jpg);">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="featured-artist-thumb">
+                        <img src="./Abstract Factory Homepage_files/makinit.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <div class="featured-artist-content">
+                        <!-- Section Heading -->
+                        <div class="section-heading white text-left mb-30">
+                            <p>Since you're here check out our</p>
+                            <h2 style="">Hottest drop!</h2>
+                        </div>
+                        <p>Fresh off the presses, this song tackles the struggle of being a passionate, genuine musician with the gripping fear of sharing the deepest part of you, your music.</p>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>Makin' It</p>
+                            </div>
+                            <div class="audioplayer"><audio preload="auto" controls="" style="width: 0px; height: 0px; visibility: hidden;">
+                                <source src="audio/makinit.mp3">
+                            </audio><div class="audioplayer-playpause" title=""><a href="file:///Users/sparris/Documents/website-2/index.html#"></a></div><div class="audioplayer-time audioplayer-time-current">00:00</div><div class="audioplayer-bar"><div class="audioplayer-bar-loaded" style="width: 100%;"></div><div class="audioplayer-bar-played"></div></div><div class="audioplayer-time audioplayer-time-duration">02:57</div><div class="audioplayer-volume"><div class="audioplayer-volume-button" title=""><a href="file:///Users/sparris/Documents/website-2/index.html#"></a></div><div class="audioplayer-volume-adjust"><div><div style="width: 100%;"></div></div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Featured Artist Area End ##### -->
+
+    <!-- ##### Miscellaneous Area Start ##### -->
+    <section class="miscellaneous-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- ***** Weeks Top ***** -->
+                <div class="col-12 col-lg-12">
+
+                    <div class="ablums-text text-center mb-70">
+                        <p></p><h1>Thanks for taking the time to come down this far on my page. <br><br>It means a lot to me both as a producer and as an artist.</h1><br><br>
+                            Music is a painful process. The best songs takes time, sweat, and tears. Very rarely does a song come together super easily, and even if it does, the next one will be super hard.<br>
+                            What I would love to do as a producer is to help you if you're an aspiring artist. I won't pull any punches with you. I WILL tell you if you suck (in the nicest way possible).<br><br>I'll be right beside you in each part of the process, even if part of that process is helping you find another producer for the track you want to create. It's my job to help make you make music and that's what I'll do.<br>I may not always knows exactly what you need for a song right away, but I promise to grind until we figure it out together.<br><br>So let's make some bops together. Head over to my contact page to get in touch with me by clicking <a href="file:///Users/sparris/Documents/website-2/contact.html">here</a> or filling in the form below.<p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Miscellaneous Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white wow fadeInUp" data-wow-delay="100ms" style="visibility: hidden; animation-delay: 100ms; animation-name: none;">
+                        <p>Fill out the form below to</p>
+                        <h2>Get In Touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+                        <form action="mailto:stevie.parris@example.com" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="100ms" style="visibility: hidden; animation-delay: 100ms; animation-name: none;">
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="200ms" style="visibility: hidden; animation-delay: 200ms; animation-name: none;">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="300ms" style="visibility: hidden; animation-delay: 300ms; animation-name: none;">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="400ms" style="visibility: hidden; animation-delay: 400ms; animation-name: none;">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms" style="visibility: hidden; animation-delay: 500ms; animation-name: none;">
+                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6 classy-navbar justify-content-between">
+                    <a href="file:///Users/sparris/Documents/website-2/index.html" class="nav-brand"><img src="./Abstract Factory Homepage_files/logo_new_white.png" alt=""></a>
+                    <p class="copywrite-text"><a href="file:///Users/sparris/Documents/website-2/index.html#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright ©<script>document.write(new Date().getFullYear());</script>2020 All rights reserved | Made with </a><a href="https://colorlib.com/" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="./Abstract Factory Homepage_files/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="./Abstract Factory Homepage_files/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="./Abstract Factory Homepage_files/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="./Abstract Factory Homepage_files/plugins.js"></script>
+    <!-- Active js -->
+    <script src="./Abstract Factory Homepage_files/active.js"></script><a id="scrollUp" href="file:///Users/sparris/Documents/website-2/index.html#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+
+
+</body></html>

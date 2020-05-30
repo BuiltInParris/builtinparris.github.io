@@ -113,12 +113,12 @@ footer, header, hgroup, menu, nav, section {
 
 	@media screen and (max-width: 736px) {
 
-			.bio h2 {
-				font-size: 1.1em;
-				line-height: 1.65em;
-			}
-
+		.bio h2 {
+			font-size: 1.1em;
+			line-height: 1.65em;
 		}
+
+	}
 
 	.bio h3 {
 		font-size: 1.15em;

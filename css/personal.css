@@ -1,0 +1,120 @@
+.side {
+    right: 0;
+    height: 100%;
+    z-index: 100;
+    padding: 0px 4%;
+    opacity: 1;
+    transition: opacity .5s;
+    transform: translate3d(0,0,0);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+.side div {
+    border: 0;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    border: 0;
+    vertical-align: baseline;
+    margin: 0;
+    display: block;
+}
+.navigation {
+    display: table;
+    height: 100%;
+}
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.navigation ul {
+    vertical-align:middle;
+    display: table-cell;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.navigation li {
+    fill: #fff;
+    display: block;
+    background: 0 0;
+    padding: 13px 9px;
+    margin: 0 -9px;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
+    text-align: -webkit-match-parent;
+}
+@media screen and (max-width: 500px) {
+    .sidebar-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .sidebar-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+    .sidebar-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1350px) {
+    .sidebar-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .sidebar-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .outline-image {
+      background: url(../img/core-img/Stevie.png) no-repeat;
+      min-height: 100%; /* Height of new image */
+      background-size: contain;
+      background-position: 0% 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .outline-image {
+      background: url(../img/core-img/Stevie.png) no-repeat;
+      min-height: 100%; /* Height of new image */
+      background-size: contain;
+      background-position: 0% 100%;
+    }
+}
